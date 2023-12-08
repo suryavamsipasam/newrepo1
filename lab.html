@@ -1,0 +1,15 @@
+#docker commands
+sudo su
+yum update -y
+sudo yum install docker
+sudo service docker start
+sudo service docker status
+docker search tomcat
+docker pull tomcat
+docker images
+docker run -d --name tomcat -p 8081:8080 tomcat
+docker exec -it tomcat /bin/bash
+pwd
+ll
+cd webapps.dist
+cp -R * ../webapps
